@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { WebsocketService } from './services/websocket.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'serverangular';
+
+	constructor(
+	  public wsService: WebsocketService,
+
+    ){}
+
+		ngOnInit(){
+			
+	
+		}
+
 }
